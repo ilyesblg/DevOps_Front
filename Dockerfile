@@ -1,4 +1,4 @@
-FROM node:latest as build
+node:12.7-alpine AS build
 
 WORKDIR /usr/local/app
 
@@ -12,4 +12,4 @@ FROM nginx:alpine
 
 COPY --from=build /usr/local/app/dist/summer-workshop-angular /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 4002
