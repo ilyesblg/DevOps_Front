@@ -1,4 +1,4 @@
-node:12.7-alpine AS build
+FROM node:18.17-alpine AS build
 
 WORKDIR /usr/local/app
 
